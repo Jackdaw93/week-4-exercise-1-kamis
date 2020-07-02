@@ -9,8 +9,8 @@ function Counter2() {
       <button onClick={() => setCount(count + 1)}> + </button>
       <button
         onClick={() => {
-          if (count <= 0) {
-            setCount((count = 0));
+          if (count < 1) {
+            alert("Angka Tidak Boleh 0");
           } else {
             setCount(count - 1);
           }
